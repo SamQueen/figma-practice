@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import PlanTable from '../components/PlanTable'
 
 const PricingSection = () => {
@@ -80,8 +80,7 @@ const PricingSection = () => {
         }
     }
     
-    const handleWindowResize = () => {
-        
+    const handleWindowResize = useCallback(() => {
         if (parseInt(window.innerWidth) >= 1024) {
             setShowTable1(true);
             setShowTable2(true);
@@ -100,7 +99,9 @@ const PricingSection = () => {
         } else {
             setShowTable3(true);
         }
-    }
+    }, [visibleTable]);
+
+
 
     useEffect(() => {
         handleWindowResize();
@@ -110,7 +111,7 @@ const PricingSection = () => {
         return () => {
             window.removeEventListener('resize', handleWindowResize);
         }
-    }, []);
+    }, [handleWindowResize]);
 
     return (
         <div className="bg-[url('./assets/pricing.png')] bg-cover bg-center bg-no-repeat lg:h-screen">
