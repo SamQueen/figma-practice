@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import CheckIcon from '../assets/check-icon.svg';
 
 const PlanTable = ({ name, price, includedFeatures, unincludedFeatures, show }) => {
   return (
@@ -11,13 +12,16 @@ const PlanTable = ({ name, price, includedFeatures, unincludedFeatures, show }) 
         <h3 className='text-2xl mb-10'>{name}</h3>
 
         <div className='flex items-baseline'>
-            <h1 className='mb-10'>${price}</h1>
-            <p className='text-lg mb-10 ml-2'> /month</p>
+            <h1 className='mb-10 ml-5 md:mr-0'>${price}</h1>
+            <p className='text-lg mb-10 ml-2'>/month</p>
         </div>
 
         <ul className='w-full text-start mb-10'>
             {includedFeatures.map((feature, index) => (
-                <li key={index} className='mb-2'>✔️ {feature}</li>
+                <li key={index} className='mb-2 flex'>
+                    <img src={CheckIcon} alt='Check Mark' className='h-4 mr-2' /> 
+                    {feature}
+                </li>
             ))}
 
             {unincludedFeatures.map((feature, index) => (

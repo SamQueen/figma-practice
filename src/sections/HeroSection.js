@@ -14,7 +14,7 @@ const HeroSection = () => {
             
             <p className='text-xl mt-40'>Startup 3</p>
             <h1 className='font-bold tracking-wide mt-5'>Forget About Code</h1>
-            <p className='text-lg w-full xl:w-[40%] mt-10'>Startup Framework gives you complete freedom over your creative proocess - you donn't have to think about any techinal aspects. There are no limits and absolutely no codeing.</p>
+            <p className='text-lg w-full xl:w-[40%] mt-10'>Startup Framework gives you complete freedom over your creative process - you don't have to think about any technical aspects. There are no limits and absolutely no coding.</p>
         
             <div className='mt-10'>
                 <Button

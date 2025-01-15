@@ -11,14 +11,14 @@ const FeaturesSection = () => {
             <div className='text-white md:w-[60%] xl:w-[45%] ml-auto lg:mr-[10%] xl:mr-[15%] flex flex-col justify-between'>
                 <div className='text-left'>
                     <h1 className='font-bold'>We Create Something New</h1>
-                    <p className='text-lg mt-5'>We have created a new product that will help designers, developers and companies create websites for their startups quickly an easily.</p>
+                    <p className='text-lg mt-5'>We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
                 </div>
 
                 <div className='block md:flex mt-10'>
                     <div className='text-left pr-10'>
                         <img className="mb-5" src={Icon1} alt="Icon"/>
                         <p>30 NEW FEATURE PAGES</p>
-                        <p className="mb-5 leading-loose font-extralight" >Startup Framework contians coomponents and complex blocks wchich can easily.</p>
+                        <p className="mb-5 leading-loose font-extralight" >Startup Framework contains components and complex blocks which can easily.</p>
                     </div>
 
                     <div className='text-left'>

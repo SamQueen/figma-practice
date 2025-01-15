@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import PlanTable from '../components/PlanTable'
+import React, { useState, useEffect, useCallback } from 'react';
+import PlanTable from '../components/PlanTable';
 
 const PricingSection = () => {
     const [showTable1, setShowTable1] = useState(false);
