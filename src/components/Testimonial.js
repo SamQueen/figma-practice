@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Testimonial = ({ name, quote, image, index }) => {
+const Testimonial = ({ name, quote, image }) => {
   return (
-    <div key={index} className='min-h-[220px] lg:w-[calc(50%-2.5rem)] m-5 p-5 rounded-md border-2 border-slate-400 border-opacity-50 flex'>
+    <div className='min-h-[220px] lg:w-[calc(50%-2.5rem)] m-5 p-5 rounded-md border-2 border-slate-400 border-opacity-50 flex'>
         <div className='h-full w-20'>
             <img className="h-15 w-15" src={image} alt="User Profile"/>
         </div>
