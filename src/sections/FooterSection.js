@@ -5,7 +5,7 @@ import Icon3 from '../assets/google-plus-icon.png'
 
 const FooterSection = () => {
   return (
-    <div className='bg-[rgb(47,24,147)] py-10 px-5  xl:px-20 text-white'>
+    <div id="contact-section" className='bg-[rgb(47,24,147)] py-10 px-5  xl:px-20 text-white'>
         <div className='lg:flex justify-between'>
             <h3 className='text-left text-2xl mb-5 xl:mb-0'>Startup3</h3>
 

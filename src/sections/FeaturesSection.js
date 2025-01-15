@@ -4,7 +4,7 @@ import Icon1 from '../assets/icon1.png';
 
 const FeaturesSection = () => {
   return (
-    <div className="bg-[url('./assets/features-image.png')] bg-cover bg-center bg-no-repeat lg:h-screen">
+    <div id="features-section" className="bg-[url('./assets/features-image.png')] bg-cover bg-center bg-no-repeat lg:h-screen">
         <div className='bg-[rgba(47,24,147,0.5)] w-full h-full px-5 py-20 relative flex items-center'>
             <LaptopImage />
 

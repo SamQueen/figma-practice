@@ -114,7 +114,7 @@ const PricingSection = () => {
     }, [handleWindowResize]);
 
     return (
-        <div className="bg-[url('./assets/pricing.png')] bg-cover bg-center bg-no-repeat lg:h-screen">
+        <div id="pricing-section" className="bg-[url('./assets/pricing.png')] bg-cover bg-center bg-no-repeat lg:h-screen">
             <div className='bg-[rgba(47,24,147,0.4)] h-full w-full text-white flex flex-col items-center
                             py-20 px-5'>
                 

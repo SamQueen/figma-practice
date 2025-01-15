@@ -35,7 +35,7 @@ const TeamSection = () => {
     ]
     
     return (
-        <div className='px-10 xl:px-20 py-32'>
+        <div id="team-section" className='px-10 xl:px-20 py-32'>
             
             <div className='text-left max-w-[1000px]'>
                 <h1 className='text-5xl mb-5'>Startup Crew</h1>

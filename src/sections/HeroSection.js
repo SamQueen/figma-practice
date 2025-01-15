@@ -4,7 +4,7 @@ import Button from '../components/Button'
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url('./assets/hero-image.png')] bg-cover bg-center bg-no-repeat
+    <div id="hero-section" className="bg-[url('./assets/hero-image.png')] bg-cover bg-center bg-no-repeat
                     sm:h-auto lg:h-screen">
 
         <div className='bg-[rgba(47,24,147,0.5)] h-full w-full text-white flex flex-col items-center
