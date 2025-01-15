@@ -29,7 +29,7 @@ const PlanTable = ({ name, price, includedFeatures, unincludedFeatures, show }) 
             ))}
         </ul>
 
-        {(name === 'Professional') ? (
+        {(name === 'Professional' || window.innerWidth <= 1024) ? (
             <Button text="Get Started" type="teriary"/>
         ) : (
             <Button text="Get Started" type="transparent"/>
