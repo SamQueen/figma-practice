@@ -8,7 +8,7 @@ const FeaturesSection = () => {
         <div className='bg-[rgba(47,24,147,0.5)] w-full h-full px-5 py-20 relative flex items-center'>
             <LaptopImage />
 
-            <div className='text-white md:w-[60%] xl:w-[45%] ml-auto lg:mr-[10%] xl:mr-[15%] h-[25rem] flex flex-col justify-between'>
+            <div className='text-white md:w-[60%] xl:w-[45%] ml-auto lg:mr-[10%] xl:mr-[15%] flex flex-col justify-between'>
                 <div className='text-left'>
                     <h1 className='font-bold'>We Create Something New</h1>
                     <p className='text-lg mt-5'>We have created a new product that will help designers, developers and companies create websites for their startups quickly an easily.</p>
