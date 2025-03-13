@@ -12,7 +12,7 @@ import FooterSection from './sections/FooterSection';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-full overflow-x-hidden">
       <HeroSection />
       <ContentSection />
       <FeaturesSection />

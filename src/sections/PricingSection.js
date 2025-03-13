@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import PlanTable from '../components/PlanTable';
+import SpringDiv from '../components/SpringDiv';
 
 const PricingSection = () => {
     const [showTable1, setShowTable1] = useState(false);
@@ -114,13 +115,17 @@ const PricingSection = () => {
     }, [handleWindowResize]);
 
     return (
-        <div id="pricing-section" className="bg-[url('./assets/pricing.png')] bg-cover bg-center bg-no-repeat lg:h-screen">
+        <div id="pricing-section" className="bg-[url('./assets/pricing.png')] bg-cover bg-center bg-no-repeat lg:h-screen bg-fixed">
             <div className='bg-[rgba(47,24,147,0.4)] h-full w-full text-white flex flex-col items-center
                             py-20 px-5'>
                 
-                <h1 className='mb-5'>Plans & Pricing</h1>
+                <SpringDiv>
+                    <h1 className='mb-5'>Plans & Pricing</h1>
+                </SpringDiv>
 
-                <p className='mb-5 text-lg'>Startup Framework is free foreever - you only pay for custom domain hosting or to export you site.</p>
+                <SpringDiv>
+                    <p className='mb-5 text-lg'>Startup Framework is free foreever - you only pay for custom domain hosting or to export you site.</p>
+                </SpringDiv>
 
                 <div className='lg:hidden flex gap-2 mb-5 bg-gray-800 rounded-md'>
                     <div 
@@ -152,6 +157,7 @@ const PricingSection = () => {
                         includedFeatures={pricePlans[0].includedFeatures}
                         unincludedFeatures ={pricePlans[0].unincludedFeatures}
                         show={showTable1}
+                        slideDuration={0.4}
                     />
                     <PlanTable 
                         name={pricePlans[1].name} 
@@ -159,6 +165,7 @@ const PricingSection = () => {
                         includedFeatures={pricePlans[1].includedFeatures}
                         unincludedFeatures ={pricePlans[1].unincludedFeatures}
                         show={showTable2}
+                        slideDuration={0.8}
                     />
                     <PlanTable 
                         name={pricePlans[2].name} 
@@ -166,6 +173,7 @@ const PricingSection = () => {
                         includedFeatures={pricePlans[2].includedFeatures}
                         unincludedFeatures ={pricePlans[2].unincludedFeatures}
                         show={showTable3}
+                        slideDuration={1.2}
                     />
 
                 </div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import Button from './Button'
 import CheckIcon from '../assets/check-icon.svg';
+import SlideInBottomDiv from './SlideInBottomDiv';
 
-const PlanTable = ({ name, price, includedFeatures, unincludedFeatures, show }) => {
+const PlanTable = ({ name, price, includedFeatures, unincludedFeatures, show, slideDuration }) => {
   return (
-    <div 
+    <SlideInBottomDiv duration={slideDuration}
         className={`w-[320px] lg:w-1/3 border-2 border-slate-400 border-opacity-45 rounded-md mx-auto px-5 xl:px-16 py-10 
             ${!show && 'hidden'}`}
     >
@@ -34,7 +35,7 @@ const PlanTable = ({ name, price, includedFeatures, unincludedFeatures, show }) 
         ) : (
             <Button text="Get Started" type="transparent"/>
         )}
-    </div>
+    </SlideInBottomDiv>
   )
 }
 

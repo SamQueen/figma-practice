@@ -3,7 +3,7 @@ import Test1 from '../assets/test1.png';
 import Test2 from '../assets/test2.png';
 import Test3 from '../assets/test3.png';
 import Test4 from '../assets/test4.png';
-import Testimonial from '../components/Testimonial'
+import Testimonial from '../components/Testimonial';
 
 const TestimonialsSection = () => {
     const testimonials = [
@@ -34,10 +34,10 @@ const TestimonialsSection = () => {
             <h1 className='text-white max-w-[1000px] mx-auto text-left mb-5 pl-5 md:pl-0'>Our Happy Clients</h1>
 
             <div className='lg:flex lg:flex-wrap max-w-[1000px] mx-auto'>
-                <Testimonial name={testimonials[0].name} quote={testimonials[0].quote} image={testimonials[0].image}/>
-                <Testimonial name={testimonials[1].name} quote={testimonials[1].quote} image={testimonials[1].image}/>
-                <Testimonial name={testimonials[2].name} quote={testimonials[2].quote} image={testimonials[2].image}/>
-                <Testimonial name={testimonials[3].name} quote={testimonials[3].quote} image={testimonials[3].image}/>
+                <Testimonial name={testimonials[0].name} quote={testimonials[0].quote} image={testimonials[0].image} duration={0.4}/>
+                <Testimonial name={testimonials[1].name} quote={testimonials[1].quote} image={testimonials[1].image} duration={0.8}/>
+                <Testimonial name={testimonials[2].name} quote={testimonials[2].quote} image={testimonials[2].image} duration={1.2}/>
+                <Testimonial name={testimonials[3].name} quote={testimonials[3].quote} image={testimonials[3].image} duration={1.6}/>
             </div>
 
         </div>

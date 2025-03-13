@@ -4,6 +4,7 @@ import Image1 from '../assets/show1.png';
 import Image2 from '../assets/show2.png';
 import Image3 from '../assets/show3.png';
 import Image4 from '../assets/show4.png';
+import SlideInLeftDiv from '../components/SlideInLeftDiv';
 
 const ShowCaseSection = () => {
     const projects = [
@@ -41,11 +42,16 @@ const ShowCaseSection = () => {
 
             <div className='md:flex md:flex-wrap mx-auto max-w-[1000px] gap-8'>
                 {projects.map((project, index) => (
-                    <div key={index} className='md:w-[calc(50%-1rem)] mb-10 text-left'>
+                    <SlideInLeftDiv
+                        key={index}
+                        duration={0.6} 
+                        className='p-5 md:w-[calc(50%-1rem)] mb-10 text-left border-2 border-transparent hover:border-[#E93A7D] rounded-md
+                                cursor-pointer duration-500'
+                    >
                         <img className="w-full mb-5" src={project.image} alt="Project" />
                         <p className='mb-2 text-sm'>{project.desc}</p>
                         <h3 className='text-2xl lg:text-3xl'>{project.name}</h3>
-                    </div>
+                    </SlideInLeftDiv>
                 ))}
             </div>
 
